@@ -21,7 +21,7 @@ public class ChamberController {
 	private ChamberService chamberService;
 
 	@PostMapping
-	public ResponseEntity<String> create(@RequestBody AnimationRequest request) {
+	public ResponseEntity<String> process(@RequestBody AnimationRequest request) {
 		List<String> list = chamberService.animate(request.getSpeed(), request.getInit());
 		String ret = list.stream().map(e -> "\"" + e + "\"").collect(Collectors.joining(",\n", "{", "}"));
 		return ResponseEntity.ok(ret);
