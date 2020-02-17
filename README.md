@@ -8,4 +8,4 @@
 
 * **Test** curl -X POST "http://localhost:8080/animate" -H "Content-Type: application/json" -d '{ "speed": 2, "init": "LR..RL" }'
 
-* **Python version** in another branch, just same logic in python implementation.
+* **Python version** in another repository, just same logic in python implementation.
